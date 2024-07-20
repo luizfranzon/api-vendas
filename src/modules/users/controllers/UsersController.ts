@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import CreateUserService from '../typeorm/services/CreateUserService';
-import ListUserService from '../typeorm/services/ListUserService';
+import ListUserService from '../services/ListUserService';
+import CreateUserService from '../services/CreateUserService';
 
 export default class UsersController {
   public async index(request: Request, response: Response): Promise<Response> {

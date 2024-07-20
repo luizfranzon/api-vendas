@@ -1,10 +1,10 @@
 import AppError from '@shared/errors/AppError';
 import { getCustomRepository } from 'typeorm';
-import UsersRepository from '../repositories/UsersRepository';
-import User from '../entities/User';
 import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import authConfig from '@config/auth';
+import UsersRepository from '../typeorm/repositories/UsersRepository';
+import User from '../typeorm/entities/User';
 
 interface IRequest {
   email: string;
